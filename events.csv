@@ -1,0 +1,31 @@
+# events.csv - list of quarterly result announcements used by event_study.py
+# bank          : bank name shown on the charts
+# symbol        : Yahoo Finance symbol (NSE stocks end with .NS)
+# quarter       : which quarterly result (e.g. Q2 FY26 = July-Sept 2025 quarter)
+# announce_date : date the result was announced, as YYYY-MM-DD (leave blank if not found yet)
+# after_market  : yes if announced after the market closed on a trading day, otherwise no
+#                 (weekend or holiday announcements are handled automatically)
+# note          : source or reminder, not used by the code
+
+
+bank,symbol,quarter,announce_date,after_market,note
+Axis Bank,AXISBANK.NS,Q2 FY26,2025-10-15,yes,Wed 15 Oct 2025 board meeting per bank's filing; Axis usually reports after market - VERIFY time
+Axis Bank,AXISBANK.NS,Q3 FY26,2026-01-26,no,Mon 26 Jan 2026 (market holiday) so Day 0 = next trading day; results filed 26 Jan per exchange timeline
+Axis Bank,AXISBANK.NS,Q4 FY26,2026-04-25,no,Saturday; board meeting 25 Apr 2026
+Axis Bank,AXISBANK.NS,Q1 FY27,2026-07-18,no,Saturday; confirmed in bank's exchange filing
+ICICI Bank,ICICIBANK.NS,Q2 FY26,2025-10-18,no,Saturday; outcome of board meeting 18 Oct 2025
+ICICI Bank,ICICIBANK.NS,Q3 FY26,2026-01-17,no,Saturday; outcome of board meeting 17 Jan 2026
+ICICI Bank,ICICIBANK.NS,Q4 FY26,2026-04-18,no,Saturday; board meeting 18 Apr 2026
+ICICI Bank,ICICIBANK.NS,Q1 FY27,2026-07-18,no,Saturday; board meeting 18 Jul 2026
+HDFC Bank,HDFCBANK.NS,Q2 FY26,2025-10-18,no,Saturday; board meeting 18 Oct 2025 per bank's exchange filing
+HDFC Bank,HDFCBANK.NS,Q3 FY26,2026-01-17,no,Saturday; board meeting 17 Jan 2026
+HDFC Bank,HDFCBANK.NS,Q4 FY26,2026-04-18,no,Saturday; board meeting 18 Apr 2026
+HDFC Bank,HDFCBANK.NS,Q1 FY27,2026-07-18,no,Saturday; outcome of board meeting 18 Jul 2026
+State Bank of India,SBIN.NS,Q2 FY26,2025-11-04,yes,Tue 4 Nov 2025 per SBI analyst meet date; SBI usually reports after market - VERIFY
+State Bank of India,SBIN.NS,Q3 FY26,2026-02-07,no,Saturday 7 Feb 2026 per SBI analyst meet date (some sites say 6 Feb; Day 0 is the same Monday)
+State Bank of India,SBIN.NS,Q4 FY26,2026-05-08,yes,Fri 8 May 2026 per SBI analyst meet date (one site says 9 May; Day 0 is the same Monday) - VERIFY
+State Bank of India,SBIN.NS,Q1 FY27,2026-08-07,yes,Fri 7 Aug 2026 board meeting per news; SBI usually reports after market - VERIFY
+Kotak Mahindra Bank,KOTAKBANK.NS,Q2 FY26,2025-10-25,no,Saturday; board meeting 25 Oct 2025
+Kotak Mahindra Bank,KOTAKBANK.NS,Q3 FY26,2026-01-24,no,Saturday; board meeting 23-24 Jan 2026 per news
+Kotak Mahindra Bank,KOTAKBANK.NS,Q4 FY26,2026-05-02,no,Saturday; board meeting 2 May 2026 per NSE intimation
+Kotak Mahindra Bank,KOTAKBANK.NS,Q1 FY27,2026-07-18,no,Saturday; board meeting 18 Jul 2026

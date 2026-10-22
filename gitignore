@@ -1,0 +1,8 @@
+
+event_output/prices/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.key
